@@ -8,6 +8,6 @@ use Symfony\Component\HttpFoundation\Response;
 class TestController extends Controller
 {
     function indexAction() {
-        return new Response("Ceci est un test !");
+        return $this->render("HelloBundle:Test:index.html.twig");
     }
 }
